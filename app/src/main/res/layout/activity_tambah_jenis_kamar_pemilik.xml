@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahJenisKamarPemilik">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fieldinputkost"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="#C4E0F8">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/tombolkembali"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/back">
+                </androidx.appcompat.widget.AppCompatImageButton>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Tambah Jenis Kamar"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/fieldinputkost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E6F3FF"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/navbar"
+        app:layout_constraintTop_toTopOf="@id/navbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/NamaKamar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/buttonbg1"
+                android:paddingStart="15dp"
+                android:hint="Nama Kamar"
+                android:drawableLeft="@drawable/room"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/robotomedium"
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/HargaKamar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonbg1"
+                android:paddingStart="15dp"
+                android:hint="Harga"
+                android:drawableLeft="@drawable/price"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/robotomedium"
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/LamaSewaKamar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonbg1"
+                android:paddingStart="10dp"
+                android:hint="Lama Sewa (Bulan/Tahun)"
+                android:drawableLeft="@drawable/lamasewa"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/robotomedium"
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/JumlahKamarTersedia"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonbg1"
+                android:paddingStart="10dp"
+                android:hint="Kamar Tersedia"
+                android:drawableLeft="@drawable/jumlahkamar"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/robotomedium"
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/LuasKamar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonbg1"
+                android:paddingStart="10dp"
+                android:hint="Luas Kamar"
+                android:drawableLeft="@drawable/luaskamar"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/robotomedium"
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="m2"
+                android:layout_marginTop="-55dp"
+                android:layout_marginLeft="335dp"
+                android:fontFamily="@font/robotomedium"
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/FasilitasKamar"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/buttonbg1"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="top"
+                android:hint="Fasilitas Kamar"
+                android:drawableLeft="@drawable/fasilitaskamar"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/robotomedium"
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/buttonbg1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gambar Kamar"
+                    android:fontFamily="@font/robotomedium"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/gambarkosticon"
+                    android:drawablePadding="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textAlignment="center">
+                </TextView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonambilfoto"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:text="Pilih Foto"
+                    android:textColor="@color/black"
+                    android:background="@drawable/ripplebuttonnegate"
+                    android:backgroundTint="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/robotomedium"
+                    android:drawableLeft="@drawable/choosephoto"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false">
+                </com.google.android.material.button.MaterialButton>
+
+                <ImageView
+                    android:id="@+id/postImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="242dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp">
+                </ImageView>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/TambahKamar"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:text="Tambah Kamar"
+                android:textColor="@color/black"
+                android:background="@drawable/ripplebutton"
+                android:backgroundTint="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:fontFamily="@font/robotomedium"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:textAllCaps="false">
+            </androidx.appcompat.widget.AppCompatButton>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

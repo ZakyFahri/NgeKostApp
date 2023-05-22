@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "956939181995",
+    "project_id": "ngekostapp",
+    "storage_bucket": "ngekostapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956939181995:android:0a8ce6f2d2d23fa24a3cee",
+        "android_client_info": {
+          "package_name": "com.android.ngekostapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956939181995-begj9olqq5rtna29r7lju4hmuo11rg1m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.ngekostapp",
+            "certificate_hash": "df73f52faa01f8d9f4126743bb66f4a95e475935"
+          }
+        },
+        {
+          "client_id": "956939181995-7fh8k8p3ncbt5jv4pbp81c8hneqn0dr5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBib2eRaD_frpjbWZ0jNEkLCa-4BMvWuE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956939181995-7fh8k8p3ncbt5jv4pbp81c8hneqn0dr5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

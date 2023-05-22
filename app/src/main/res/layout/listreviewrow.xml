@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/GambarReviewer"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ikontambahjeniskamar">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/NamaReviewer"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Tambah"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/robotoregular"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:textColor="@color/black">
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/buatBintang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/white">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/bintang1R"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/star">
+            </androidx.appcompat.widget.AppCompatImageButton>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/bintang2R"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/star">
+            </androidx.appcompat.widget.AppCompatImageButton>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/bintang3R"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/star">
+            </androidx.appcompat.widget.AppCompatImageButton>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/bintang4R"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/star">
+            </androidx.appcompat.widget.AppCompatImageButton>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/bintang5R"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/star">
+            </androidx.appcompat.widget.AppCompatImageButton>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/UlasanReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suka chiling di teras kumpul sambil kerja tugas disini, banyak juga penjual, ada juga laundry jadi tidak repot-repot lagi cari cemilan sama cuci baju"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/robotoregular"
+            android:layout_marginTop="10dp"
+            android:justificationMode="inter_word"
+            >
+        </TextView>
+
+
+    </LinearLayout>
+</LinearLayout>

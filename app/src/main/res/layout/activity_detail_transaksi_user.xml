@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailTransaksiUser">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fielddetailkost"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="#C4E0F8">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/tombolkembali"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/back">
+                </androidx.appcompat.widget.AppCompatImageButton>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Detail Transaksi"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/fielddetailkost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="#E6F3FF"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/navbar"
+        app:layout_constraintTop_toTopOf="@id/navbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gambarkostdetail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true">
+            </ImageView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-195dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/pintelponkost"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonimg"
+                    android:src="@drawable/phonesmall"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"></androidx.appcompat.widget.AppCompatImageButton>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/layoutappearwhite"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="165dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/NamaKostDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/robotoregular"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/namapemilikkostDetail"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/robotoregular"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_vertical"
+                        android:drawableLeft="@drawable/pemilikkostdetail"
+                        android:drawablePadding="10dp">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/notelppemilikkostdetail"
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/robotoregular"
+                        android:textColor="@color/black"
+                        android:drawableLeft="@drawable/phonesmall"
+                        android:drawablePadding="10dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/jeniskostdetail"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/robotoregular"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_vertical"
+                        android:drawableLeft="@drawable/gendersmall"
+                        android:drawablePadding="10dp">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/rangeharga"
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:fontFamily="@font/robotoregular"
+                        android:textColor="@color/black"
+                        android:drawableLeft="@drawable/rangehargaicon"
+                        android:drawablePadding="10dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/alamatkostdetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:drawableLeft="@drawable/alamaticon"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/robotoregular"
+                        android:textColor="@color/black"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/lamaSewa"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:drawableLeft="@drawable/lamasewa"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/robotoregular"
+                        android:textColor="@color/black"></TextView>
+
+                </LinearLayout>
+
+                    zz<com.google.android.material.button.MaterialButton
+                        android:id="@+id/buttonKeDetailKost"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:text="Lihat Detail"
+                        android:textColor="@color/black"
+                        android:background="@drawable/ripplebuttonnegate"
+                        android:backgroundTint="@color/white"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/robotomedium"
+                        android:drawableLeft="@drawable/homesmall"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"
+                        android:textAllCaps="false">
+                    </com.google.android.material.button.MaterialButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/layoutappearwhite"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/StatusInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Status Transaksi"
+                    android:drawableLeft="@drawable/check_2"
+                    android:drawablePadding="10dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/robotoregular"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/TampilStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:fontFamily="@font/robotoblack"
+                    android:textSize="16dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black">
+                </TextView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonBayarKost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Lakukan Pembayaran"
+                    android:textColor="@color/black"
+                    android:background="@drawable/ripplebuttonnegate"
+                    android:backgroundTint="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/robotomedium"
+                    android:drawableLeft="@drawable/checkout"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="0dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textAllCaps="false">
+                </com.google.android.material.button.MaterialButton>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonReview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Berikan Ulasan"
+                    android:textColor="@color/black"
+                    android:background="@drawable/ripplebuttonnegate"
+                    android:backgroundTint="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/robotomedium"
+                    android:drawableLeft="@drawable/review"
+                    android:layout_marginTop="-50dp"
+                    android:layout_marginRight="0dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textAllCaps="false">
+                </com.google.android.material.button.MaterialButton>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fieldjeniskamar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/layoutappearwhite"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/JenisKamarInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Jenis Kamar Dibeli"
+                    android:drawableLeft="@drawable/jeniskamarsmall"
+                    android:drawablePadding="10dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/robotoregular"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+                </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imageKamar"
+                            android:layout_width="120dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:adjustViewBounds="true"
+                            app:shapeAppearanceOverlay="@style/roundedImage"
+                            android:scaleType="fitXY"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tampilnamaKamar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sederhana"
+                            android:fontFamily="@font/robotoblack"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/logoHarga"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_below="@id/tvJenisKamar"
+                                app:srcCompat="@drawable/price" />
+
+                            <TextView
+                                android:id="@+id/hasilHarga1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:layout_toRightOf="@id/logoHarga"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/robotoregular"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/hasilHarga2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="/"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/robotoregular"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/hasilHarga3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/robotoregular"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp">
+
+                            <ImageView
+                                android:id="@+id/logoLuas"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_below="@id/tvJenisKamar"
+                                app:srcCompat="@drawable/luaskamar" />
+
+                            <TextView
+                                android:id="@+id/hasilLuas"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/robotoregular"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/buttonkeKamar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="Detail Kamar"
+                            android:textColor="@color/black"
+                            android:background="@drawable/ripplebuttonnegate"
+                            android:backgroundTint="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/robotomedium"
+                            android:drawableLeft="@drawable/jumlahkamar"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:textAllCaps="false">
+                        </com.google.android.material.button.MaterialButton>
+
+                    </LinearLayout>
+                    </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

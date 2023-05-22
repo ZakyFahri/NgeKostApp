@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort &amp; Filter"
+        android:fontFamily="@font/robotoregular"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"/>
+
+    <RadioGroup
+        android:id="@+id/filterdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <RadioButton
+            android:id="@+id/radioAZ"
+            android:paddingLeft="30dp"
+            android:fontFamily="@font/robotoregular"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A-Z"/>
+
+        <RadioButton
+            android:id="@+id/radioZA"
+            android:paddingLeft="30dp"
+            android:fontFamily="@font/robotoregular"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z-A"/>
+
+        <RadioButton
+            android:id="@+id/radioLakiLaki"
+            android:paddingLeft="30dp"
+            android:fontFamily="@font/robotoregular"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kost Laki-Laki"/>
+
+        <RadioButton
+            android:id="@+id/radioPerempuan"
+            android:paddingLeft="30dp"
+            android:fontFamily="@font/robotoregular"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kost Perempuan"/>
+
+        <RadioButton
+            android:id="@+id/radioCampur"
+            android:paddingLeft="30dp"
+            android:fontFamily="@font/robotoregular"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kost Campur"/>
+
+        <RadioButton
+            android:id="@+id/radioRating"
+            android:paddingLeft="30dp"
+            android:fontFamily="@font/robotoregular"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating Tertinggi"/>
+
+    </RadioGroup>
+</LinearLayout>

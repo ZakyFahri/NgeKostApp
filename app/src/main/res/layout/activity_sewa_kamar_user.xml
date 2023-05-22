@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SewaKamarUser">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fieldSewaKamar"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="#C4E0F8">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/tombolkembali"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/back">
+                </androidx.appcompat.widget.AppCompatImageButton>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Sewa Kamar"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/fieldSewaKamar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="56dp"
+        android:background="#E6F3FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/navbar"
+        app:layout_constraintTop_toTopOf="@id/navbar">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/robotoblack"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tampilNamaUser"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/robotoregular"
+            android:background="@drawable/buttonbg1"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/robotoblack"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tampilAlamatUser"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/robotoregular"
+            android:background="@drawable/buttonbg1"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/robotoblack"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tampilJenisKelaminUser"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/robotoregular"
+            android:background="@drawable/buttonbg1"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Kost:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/robotoblack"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tampilNamaKostPemilik"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/robotoregular"
+            android:background="@drawable/buttonbg1"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kamar:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/robotoblack"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tampilNamaKamarPemilik"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonbg1"
+            android:fontFamily="@font/robotoregular"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/robotoblack"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/tampilHargaKamarUser"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                android:fontFamily="@font/robotoregular"
+                android:background="@drawable/buttonbg1"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </EditText>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonHitungHarga"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:drawableBottom="@drawable/check"
+                android:textColor="@color/black"
+                android:background="@drawable/ripplebuttonnegate"
+                android:backgroundTint="@color/white"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:fontFamily="@font/robotoblack"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:textAllCaps="false">
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonKurangLamaSewa"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:textColor="@color/black"
+                android:background="@drawable/ripplebuttonnegate"
+                android:backgroundTint="@color/white"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:fontFamily="@font/robotoblack"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:textAllCaps="false">
+            </com.google.android.material.button.MaterialButton>
+
+            <TextView
+                android:id="@+id/angkalamaSewa"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="1"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/robotoregular"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttontambahLamaSewa"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:textColor="@color/black"
+                android:background="@drawable/ripplebuttonnegate"
+                android:backgroundTint="@color/white"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:fontFamily="@font/robotoblack"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:textAllCaps="false">
+            </com.google.android.material.button.MaterialButton>
+
+
+            <TextView
+                android:id="@+id/tampilLamaSewaKamar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bulan"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/robotoregular"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+
+
+        </LinearLayout>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSewa"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/listFasilitas"
+            android:text="Sewa Kost"
+            android:textColor="@color/black"
+            android:background="@drawable/ripplebutton"
+            app:backgroundTint="@color/white"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:fontFamily="@font/robotomedium"
+            android:drawableLeft="@drawable/cartvector"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:textAllCaps="false">
+        </com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

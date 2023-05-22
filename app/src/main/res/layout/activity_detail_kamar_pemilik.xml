@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailKamarPemilik">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fielddetailkamar"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="#C4E0F8">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/tombolkembali"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/back">
+                </androidx.appcompat.widget.AppCompatImageButton>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Detail Kamar"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/fielddetailkamar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/navbar"
+        app:layout_constraintTop_toTopOf="@id/navbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/postImageKost"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tvJenisKamar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/postImageKost"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/logoHarga"
+                android:layout_width="46dp"
+                android:layout_height="34dp"
+                android:layout_below="@id/tvJenisKamar"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/price" />
+
+            <TextView
+                android:id="@+id/hasilHarga1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="240dp"
+                android:layout_toRightOf="@id/logoHarga"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/hasilHarga2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="240dp"
+                android:layout_toRightOf="@id/hasilHarga1"
+                android:text="/"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/hasilHarga3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="240dp"
+                android:layout_toRightOf="@id/hasilHarga2"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/logoKamar"
+                android:layout_width="46dp"
+                android:layout_height="34dp"
+                android:layout_below="@id/logoHarga"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/jumlahkamar" />
+
+            <TextView
+                android:id="@+id/hasilKamar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="285dp"
+                android:layout_toRightOf="@id/logoKamar"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/hasilKamar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="285dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="Kamar Tersedia"
+                android:layout_toRightOf="@id/hasilKamar"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/logoLuas"
+                android:layout_width="46dp"
+                android:layout_height="34dp"
+                android:layout_below="@id/logoKamar"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/luaskamar" />
+
+            <TextView
+                android:id="@+id/hasilLuas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="335dp"
+                android:layout_toRightOf="@id/logoLuas"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/logoFasilitas"
+                android:layout_width="46dp"
+                android:layout_height="34dp"
+                android:layout_below="@id/logoLuas"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/fasilitaskamar" />
+
+            <TextView
+                android:id="@+id/hasilFasilitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="380dp"
+                android:layout_toRightOf="@id/logoFasilitas"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/listFasilitas"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="420dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/logoFasilitas"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonEdit"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/listFasilitas"
+                android:text="Edit Data Kamar"
+                android:textColor="@color/black"
+                android:background="@drawable/ripplebuttonnegate"
+                android:backgroundTint="@color/white"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:fontFamily="@font/robotomedium"
+                android:drawableLeft="@drawable/editkamar"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:textAllCaps="false">
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonHapus"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/listFasilitas"
+                android:layout_toRightOf="@id/buttonEdit"
+                android:text="Hapus Kamar"
+                android:textColor="@color/black"
+                android:background="@drawable/ripplebuttonnegate"
+                android:backgroundTint="@color/white"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/robotomedium"
+                android:drawableLeft="@drawable/delete"
+                android:layout_marginBottom="20dp"
+                android:textAllCaps="false">
+            </com.google.android.material.button.MaterialButton>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

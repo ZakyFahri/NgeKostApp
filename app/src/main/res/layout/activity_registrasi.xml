@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".Registrasi">
+
+    <ImageView
+        android:id="@+id/logoregistrasi"
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:layout_margin="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="10dp"
+        android:src="@drawable/registrasi">
+    </ImageView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layoutappear"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scrollbars="none"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="280dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/registrasiteks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/robotomedium"
+                android:text="Registrasi"
+                android:textAlignment="center"
+                android:textColor="#070707"
+                android:textSize="24sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <EditText
+                android:id="@+id/inputNama"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonbg1"
+                android:paddingStart="10dp"
+                android:hint="Nama"
+                android:drawableLeft="@drawable/nama"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/robotomedium"
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/inputAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonbg1"
+                android:paddingStart="10dp"
+                android:hint="Alamat"
+                android:drawableLeft="@drawable/address"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/robotomedium"
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/inputnoTelp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonbg1"
+                android:paddingStart="10dp"
+                android:hint="Nomor Telpon"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/robotomedium"
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/inputjeniskelamin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonbg1"
+                android:paddingStart="10dp"
+                android:hint="Jenis Kelamin (P)/(L)"
+                android:drawableLeft="@drawable/gender"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/robotomedium"
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+            </EditText>
+
+<!--            <Spinner-->
+<!--                android:id="@+id/inputjenisKelamin"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:background="@drawable/stylespinner1">-->
+<!--            </Spinner>-->
+
+            <Spinner
+                android:id="@+id/jenisLoginRegistrasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/stylespinner1">
+            </Spinner>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/buttonbg1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Foto Profil"
+                    android:fontFamily="@font/robotomedium"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/gambarkosticon"
+                    android:drawablePadding="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textAlignment="center">
+                </TextView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonchoosefoto"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:text="Unggah Foto"
+                    android:textColor="@color/black"
+                    android:background="@drawable/ripplebuttonnegate"
+                    android:backgroundTint="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/robotomedium"
+                    android:drawableLeft="@drawable/choosephoto"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false">
+                </com.google.android.material.button.MaterialButton>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/fotoprofil"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"></de.hdodenhof.circleimageview.CircleImageView>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:startIconDrawable="@drawable/email"
+                app:startIconTint="@color/black"
+                android:hint="Email"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EmailRegistrasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="email"
+                    android:background="@drawable/buttonbg1"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/robotomedium"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@android:color/transparent"
+                    >
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:startIconDrawable="@drawable/pass"
+                app:startIconTint="@color/black"
+                android:hint="Password"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:hintTextColor="@color/black"
+                app:passwordToggleDrawable="@drawable/password_toggle"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordRegistrasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:background="@drawable/buttonbg1"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/robotomedium"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@android:color/transparent"
+                    >
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonRegistrasi"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:text="Registrasi"
+                android:textColor="@color/black"
+                android:background="@drawable/ripplebutton"
+                android:backgroundTint="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:fontFamily="@font/robotomedium"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:textAllCaps="false">
+            </androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

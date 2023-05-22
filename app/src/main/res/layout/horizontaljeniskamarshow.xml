@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/GambarKamar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ikontambahjeniskamar">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/NamaKamar"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="Tambah"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/robotoregular"
+        android:textSize="10sp"
+        android:textAlignment="center"
+        android:textColor="@color/black">
+    </TextView>
+</LinearLayout>

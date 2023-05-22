@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NgeKostApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".RuteKostUser"
+            android:exported="false" />
+        <activity
+            android:name=".LupaPasswordAkun"
+            android:exported="false" />
+        <activity
+            android:name=".TentangAplikasiUser"
+            android:exported="false" />
+        <activity
+            android:name=".PetaKostUser"
+            android:exported="false" />
+        <activity
+            android:name=".BeriReviewUser"
+            android:exported="false" />
+        <activity
+            android:name=".PembayaranKostUser"
+            android:exported="false" />
+        <activity
+            android:name=".DetailTransaksiPemilik"
+            android:exported="false" />
+        <activity
+            android:name=".ListTransaksiKostPemilik"
+            android:exported="false" />
+        <activity
+            android:name=".DetailTransaksiUser"
+            android:exported="false" />
+        <activity
+            android:name=".ListBookmarkUser"
+            android:exported="false" />
+        <activity
+            android:name=".ListTransaksiKostUser"
+            android:exported="false" />
+        <activity
+            android:name=".SewaKamarUser"
+            android:exported="false" />
+        <activity
+            android:name=".EditJenisKamarPemilik"
+            android:exported="false" />
+        <activity
+            android:name=".DetailKamarPemilik"
+            android:exported="false" />
+        <activity
+            android:name=".DetailKamarUser"
+            android:exported="false" />
+        <activity
+            android:name=".TambahJenisKamarPemilik"
+            android:exported="false" />
+        <activity
+            android:name=".EditDataKost"
+            android:exported="false" />
+        <activity
+            android:name=".DetailKostUser"
+            android:exported="false" />
+        <activity
+            android:name=".DetailKostPemilik"
+            android:exported="false" />
+        <activity
+            android:name=".ListKostPemilik"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfilPemilik"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfiUser"
+            android:exported="false" />
+        <activity
+            android:name=".CariKostUser"
+            android:exported="false" />
+        <activity
+            android:name=".TambahKostPemilik"
+            android:exported="false" />
+        <activity
+            android:name=".DashPemilik"
+            android:exported="false" />
+        <activity
+            android:name=".DashUser"
+            android:exported="false" />
+        <activity
+            android:name=".Registrasi"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
